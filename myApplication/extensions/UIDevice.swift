@@ -5,6 +5,7 @@
 //  Created by Dennis Henle on 14.09.24.
 //
 
+#if os(iOS)
 import UIKit
 
 extension UIDevice {
@@ -12,3 +13,4 @@ extension UIDevice {
         return UIDevice.current.userInterfaceIdiom == .pad
     }
 }
+#endif
