@@ -11,7 +11,11 @@ import SwiftUI
 struct myApplicationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if UIDevice.isPad {
+                PadContentView()
+            } else {
+                PhoneContentView()
+            }
         }
     }
 }

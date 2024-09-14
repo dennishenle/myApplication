@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PadContentView: View {
     @State private var selectedItem: Tab? = .aboutMe
 
     var body: some View {
@@ -15,8 +15,11 @@ struct ContentView: View {
             List(
                 Tab.allCases,
                 selection: $selectedItem
-            ) { item in
-                Text(item.rawValue)
+            ) { tab in
+                Button(tab.rawValue) {
+                    selectedItem = tab
+                }
+                .buttonStyle(PlainButtonStyle())
             }
             .navigationTitle("Menu")
         } detail: {
@@ -35,5 +38,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    PadContentView()
 }

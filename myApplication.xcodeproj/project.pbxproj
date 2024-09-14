@@ -14,7 +14,7 @@
 		08054A2E2C94A513003C148E /* myApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A2D2C94A513003C148E /* myApplicationUITests.swift */; };
 		08054A302C94A513003C148E /* myApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A2F2C94A513003C148E /* myApplicationUITestsLaunchTests.swift */; };
 		08054A3E2C95617F003C148E /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A3D2C95617F003C148E /* UIDevice.swift */; };
-		08054A412C95747D003C148E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* ContentView.swift */; };
+		08054A412C95747D003C148E /* PadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* PadContentView.swift */; };
 		08054A472C95777D003C148E /* NotSupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A462C95777D003C148E /* NotSupportedDeviceView.swift */; };
 		08054A4A2C9579C5003C148E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* Tab.swift */; };
 		08054A522C95B969003C148E /* myApplicationMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A512C95B969003C148E /* myApplicationMacOSApp.swift */; };
@@ -22,8 +22,9 @@
 		08054A592C95B96B003C148E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08054A582C95B96B003C148E /* Preview Assets.xcassets */; };
 		08054A6E2C95B96B003C148E /* myApplicationMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A6D2C95B96B003C148E /* myApplicationMacOSUITests.swift */; };
 		08054A702C95B96B003C148E /* myApplicationMacOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A6F2C95B96B003C148E /* myApplicationMacOSUITestsLaunchTests.swift */; };
-		08054A7A2C95B993003C148E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* ContentView.swift */; };
+		08054A7A2C95B993003C148E /* PadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* PadContentView.swift */; };
 		08054A7B2C95B9A8003C148E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* Tab.swift */; };
+		08054A7D2C95BC02003C148E /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A7C2C95BC02003C148E /* PhoneContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,7 @@
 		08054A2D2C94A513003C148E /* myApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationUITests.swift; sourceTree = "<group>"; };
 		08054A2F2C94A513003C148E /* myApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08054A3D2C95617F003C148E /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
-		08054A402C95747D003C148E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08054A402C95747D003C148E /* PadContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadContentView.swift; sourceTree = "<group>"; };
 		08054A462C95777D003C148E /* NotSupportedDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSupportedDeviceView.swift; sourceTree = "<group>"; };
 		08054A492C9579C5003C148E /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		08054A4F2C95B969003C148E /* myApplicationMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApplicationMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +74,7 @@
 		08054A692C95B96B003C148E /* myApplicationMacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myApplicationMacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08054A6D2C95B96B003C148E /* myApplicationMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationMacOSUITests.swift; sourceTree = "<group>"; };
 		08054A6F2C95B96B003C148E /* myApplicationMacOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationMacOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08054A7C2C95BC02003C148E /* PhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,8 +190,9 @@
 		08054A3F2C957469003C148E /* views */ = {
 			isa = PBXGroup;
 			children = (
-				08054A402C95747D003C148E /* ContentView.swift */,
+				08054A402C95747D003C148E /* PadContentView.swift */,
 				08054A452C95776E003C148E /* NotSupportedDevice */,
+				08054A7C2C95BC02003C148E /* PhoneContentView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -437,8 +440,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08054A3E2C95617F003C148E /* UIDevice.swift in Sources */,
-				08054A412C95747D003C148E /* ContentView.swift in Sources */,
+				08054A412C95747D003C148E /* PadContentView.swift in Sources */,
 				08054A472C95777D003C148E /* NotSupportedDeviceView.swift in Sources */,
+				08054A7D2C95BC02003C148E /* PhoneContentView.swift in Sources */,
 				08054A132C94A511003C148E /* myApplicationApp.swift in Sources */,
 				08054A4A2C9579C5003C148E /* Tab.swift in Sources */,
 			);
@@ -466,7 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08054A7B2C95B9A8003C148E /* Tab.swift in Sources */,
-				08054A7A2C95B993003C148E /* ContentView.swift in Sources */,
+				08054A7A2C95B993003C148E /* PadContentView.swift in Sources */,
 				08054A522C95B969003C148E /* myApplicationMacOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
