@@ -9,9 +9,10 @@ import SwiftUI
 
 struct PadContentView: View {
     @State private var selectedItem: MenuItem? = .aboutMe
+    @State private var columnVisibility: NavigationSplitViewVisibility = .all
 
     var body: some View {
-        NavigationSplitView {
+        NavigationSplitView(columnVisibility: $columnVisibility) {
             List(
                 MenuItem.allCases,
                 selection: $selectedItem
@@ -19,7 +20,7 @@ struct PadContentView: View {
                 Button(tab.rawValue) {
                     selectedItem = tab
                 }
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(MenuButtonStyle(isSelected: selectedItem == tab))
             }
             .navigationTitle("Menu")
         } detail: {

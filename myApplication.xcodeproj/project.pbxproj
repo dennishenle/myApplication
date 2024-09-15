@@ -15,7 +15,6 @@
 		08054A302C94A513003C148E /* myApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A2F2C94A513003C148E /* myApplicationUITestsLaunchTests.swift */; };
 		08054A3E2C95617F003C148E /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A3D2C95617F003C148E /* UIDevice.swift */; };
 		08054A412C95747D003C148E /* PadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* PadContentView.swift */; };
-		08054A472C95777D003C148E /* NotSupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A462C95777D003C148E /* NotSupportedDeviceView.swift */; };
 		08054A4A2C9579C5003C148E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* MenuItem.swift */; };
 		08054A522C95B969003C148E /* myApplicationMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A512C95B969003C148E /* myApplicationMacOSApp.swift */; };
 		08054A562C95B96B003C148E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08054A552C95B96B003C148E /* Assets.xcassets */; };
@@ -25,6 +24,7 @@
 		08054A7A2C95B993003C148E /* PadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* PadContentView.swift */; };
 		08054A7B2C95B9A8003C148E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* MenuItem.swift */; };
 		08054A7D2C95BC02003C148E /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A7C2C95BC02003C148E /* PhoneContentView.swift */; };
+		08D8EC522C96CB6500EC2679 /* MenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D8EC512C96CB6500EC2679 /* MenuButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 		08054A2F2C94A513003C148E /* myApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08054A3D2C95617F003C148E /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		08054A402C95747D003C148E /* PadContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadContentView.swift; sourceTree = "<group>"; };
-		08054A462C95777D003C148E /* NotSupportedDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSupportedDeviceView.swift; sourceTree = "<group>"; };
 		08054A492C9579C5003C148E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		08054A4F2C95B969003C148E /* myApplicationMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApplicationMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08054A512C95B969003C148E /* myApplicationMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationMacOSApp.swift; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		08054A6D2C95B96B003C148E /* myApplicationMacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationMacOSUITests.swift; sourceTree = "<group>"; };
 		08054A6F2C95B96B003C148E /* myApplicationMacOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationMacOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08054A7C2C95BC02003C148E /* PhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContentView.swift; sourceTree = "<group>"; };
+		08D8EC512C96CB6500EC2679 /* MenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +144,9 @@
 		08054A112C94A511003C148E /* myApplication */ = {
 			isa = PBXGroup;
 			children = (
+				08D8EC4F2C96C86900EC2679 /* ui */,
 				08054A482C9579AD003C148E /* models */,
 				08054A122C94A511003C148E /* myApplicationApp.swift */,
-				08054A3F2C957469003C148E /* views */,
 				08054A3C2C956119003C148E /* extensions */,
 				08054A162C94A513003C148E /* Assets.xcassets */,
 				08054A182C94A513003C148E /* Preview Content */,
@@ -185,24 +185,6 @@
 				08054A3D2C95617F003C148E /* UIDevice.swift */,
 			);
 			path = extensions;
-			sourceTree = "<group>";
-		};
-		08054A3F2C957469003C148E /* views */ = {
-			isa = PBXGroup;
-			children = (
-				08054A402C95747D003C148E /* PadContentView.swift */,
-				08054A452C95776E003C148E /* NotSupportedDevice */,
-				08054A7C2C95BC02003C148E /* PhoneContentView.swift */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		08054A452C95776E003C148E /* NotSupportedDevice */ = {
-			isa = PBXGroup;
-			children = (
-				08054A462C95777D003C148E /* NotSupportedDeviceView.swift */,
-			);
-			path = NotSupportedDevice;
 			sourceTree = "<group>";
 		};
 		08054A482C9579AD003C148E /* models */ = {
@@ -247,6 +229,24 @@
 				08054A6F2C95B96B003C148E /* myApplicationMacOSUITestsLaunchTests.swift */,
 			);
 			path = myApplicationMacOSUITests;
+			sourceTree = "<group>";
+		};
+		08D8EC4F2C96C86900EC2679 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				08054A402C95747D003C148E /* PadContentView.swift */,
+				08054A7C2C95BC02003C148E /* PhoneContentView.swift */,
+				08D8EC502C96C87000EC2679 /* buttonStyles */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		08D8EC502C96C87000EC2679 /* buttonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				08D8EC512C96CB6500EC2679 /* MenuButtonStyle.swift */,
+			);
+			path = buttonStyles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,7 +441,7 @@
 			files = (
 				08054A3E2C95617F003C148E /* UIDevice.swift in Sources */,
 				08054A412C95747D003C148E /* PadContentView.swift in Sources */,
-				08054A472C95777D003C148E /* NotSupportedDeviceView.swift in Sources */,
+				08D8EC522C96CB6500EC2679 /* MenuButtonStyle.swift in Sources */,
 				08054A7D2C95BC02003C148E /* PhoneContentView.swift in Sources */,
 				08054A132C94A511003C148E /* myApplicationApp.swift in Sources */,
 				08054A4A2C9579C5003C148E /* MenuItem.swift in Sources */,
