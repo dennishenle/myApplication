@@ -16,14 +16,14 @@
 		08054A3E2C95617F003C148E /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A3D2C95617F003C148E /* UIDevice.swift */; };
 		08054A412C95747D003C148E /* PadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* PadContentView.swift */; };
 		08054A472C95777D003C148E /* NotSupportedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A462C95777D003C148E /* NotSupportedDeviceView.swift */; };
-		08054A4A2C9579C5003C148E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* Tab.swift */; };
+		08054A4A2C9579C5003C148E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* MenuItem.swift */; };
 		08054A522C95B969003C148E /* myApplicationMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A512C95B969003C148E /* myApplicationMacOSApp.swift */; };
 		08054A562C95B96B003C148E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08054A552C95B96B003C148E /* Assets.xcassets */; };
 		08054A592C95B96B003C148E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08054A582C95B96B003C148E /* Preview Assets.xcassets */; };
 		08054A6E2C95B96B003C148E /* myApplicationMacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A6D2C95B96B003C148E /* myApplicationMacOSUITests.swift */; };
 		08054A702C95B96B003C148E /* myApplicationMacOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A6F2C95B96B003C148E /* myApplicationMacOSUITestsLaunchTests.swift */; };
 		08054A7A2C95B993003C148E /* PadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A402C95747D003C148E /* PadContentView.swift */; };
-		08054A7B2C95B9A8003C148E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* Tab.swift */; };
+		08054A7B2C95B9A8003C148E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A492C9579C5003C148E /* MenuItem.swift */; };
 		08054A7D2C95BC02003C148E /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08054A7C2C95BC02003C148E /* PhoneContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		08054A3D2C95617F003C148E /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		08054A402C95747D003C148E /* PadContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadContentView.swift; sourceTree = "<group>"; };
 		08054A462C95777D003C148E /* NotSupportedDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSupportedDeviceView.swift; sourceTree = "<group>"; };
-		08054A492C9579C5003C148E /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		08054A492C9579C5003C148E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		08054A4F2C95B969003C148E /* myApplicationMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApplicationMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08054A512C95B969003C148E /* myApplicationMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApplicationMacOSApp.swift; sourceTree = "<group>"; };
 		08054A552C95B96B003C148E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 		08054A482C9579AD003C148E /* models */ = {
 			isa = PBXGroup;
 			children = (
-				08054A492C9579C5003C148E /* Tab.swift */,
+				08054A492C9579C5003C148E /* MenuItem.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 				08054A472C95777D003C148E /* NotSupportedDeviceView.swift in Sources */,
 				08054A7D2C95BC02003C148E /* PhoneContentView.swift in Sources */,
 				08054A132C94A511003C148E /* myApplicationApp.swift in Sources */,
-				08054A4A2C9579C5003C148E /* Tab.swift in Sources */,
+				08054A4A2C9579C5003C148E /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08054A7B2C95B9A8003C148E /* Tab.swift in Sources */,
+				08054A7B2C95B9A8003C148E /* MenuItem.swift in Sources */,
 				08054A7A2C95B993003C148E /* PadContentView.swift in Sources */,
 				08054A522C95B969003C148E /* myApplicationMacOSApp.swift in Sources */,
 			);

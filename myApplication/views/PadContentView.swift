@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct PadContentView: View {
-    @State private var selectedItem: Tab? = .aboutMe
+    @State private var selectedItem: MenuItem? = .aboutMe
 
     var body: some View {
         NavigationSplitView {
             List(
-                Tab.allCases,
+                MenuItem.allCases,
                 selection: $selectedItem
             ) { tab in
                 Button(tab.rawValue) {
@@ -23,15 +23,10 @@ struct PadContentView: View {
             }
             .navigationTitle("Menu")
         } detail: {
-            switch selectedItem {
-            case .aboutMe:
-                Text("About me")
-            case .resumé:
-                Text("Resume")
-            case .skills:
-                Text("My skills")
-            case .none:
-                Text("None")
+            if let selectedItem {
+                selectedItem.view
+            } else {
+                Text("Nothing selected")
             }
         }
     }

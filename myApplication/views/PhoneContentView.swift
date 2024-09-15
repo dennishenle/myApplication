@@ -8,40 +8,15 @@
 import SwiftUI
 
 struct PhoneContentView: View {
-//    @State private var selectedItem: Tab? = .aboutMe
-
     var body: some View {
         TabView {
-            ForEach(Tab.allCases) { tab in
-                Text(tab.rawValue)
+            ForEach(MenuItem.allCases) { item in
+                item.view
                     .tabItem {
-                        Label(tab.rawValue, systemImage: "square.split.2x2")
+                        Label(item.rawValue, systemImage: "square.split.2x2")
                     }
             }
         }
-//        NavigationSplitView {
-//            List(
-//                Tab.allCases,
-//                selection: $selectedItem
-//            ) { tab in
-//                Button(tab.rawValue) {
-//                    selectedItem = tab
-//                }
-//                .buttonStyle(PlainButtonStyle())
-//            }
-//            .navigationTitle("Menu")
-//        } detail: {
-//            switch selectedItem {
-//            case .aboutMe:
-//                Text("About me")
-//            case .resumé:
-//                Text("Resume")
-//            case .skills:
-//                Text("My skills")
-//            case .none:
-//                Text("None")
-//            }
-//        }
     }
 }
 
